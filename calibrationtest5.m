@@ -15,7 +15,7 @@ if size(data, 2) < 2
     error('The selected Excel file must contain at least two columns: Tekscan and Zwick data.');
 end
 tekscanForce = data(:, 1); % Column 1: Tekscan force
-RealForce = data(:, 2);   % Column 2: Zwick force
+zwickForce = data(:, 2);   % Column 2: Zwick force
 
 % Ask user to input the number of calibration points
 numTotalPoints = length(tekscanForce);
